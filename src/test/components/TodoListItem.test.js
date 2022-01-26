@@ -90,6 +90,6 @@ describe('<TodoListItem />', () => {
         )
 
         expect( container.querySelector('p').className ).toBe( 'complete' )
-        expect( container.querySelector('p') ).toHaveClass('complete')
+        expect( container.querySelector('p') ).toHaveClass( 'complete'  )
     })
 });
