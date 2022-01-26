@@ -29,8 +29,8 @@ describe('todoReducer', () => {
         expect( state.length ).toBe( 0 )
     })
 
-    test('debe toggle un todo', () => {
-        const state = todoReducer(demoTodos, { type: 'toggle', payload: demoTodos[0].id })
+    test('debe hacer el toggle de un todo', () => {
+        const state = todoReducer(demoTodos, { type: 'toggle', payload: 1 })
 
         expect( state[0].done ).toBe( true )
     })
