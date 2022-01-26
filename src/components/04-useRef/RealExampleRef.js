@@ -5,7 +5,7 @@ import '../02-useEffect/effects.css';
 
 export const RealExampleRef = () => {
 
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false)
 
     return (
         <div>
