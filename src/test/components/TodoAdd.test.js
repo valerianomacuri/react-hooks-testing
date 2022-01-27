@@ -5,8 +5,8 @@ import { TodoAdd } from "../../components/08-useReducer/TodoAdd";
 
 describe('<TodoAdd />', () => {
 
-    const handleAddTodo = jest.fn()
     afterEach( cleanup )
+    const handleAddTodo = jest.fn()
     test('debe mostrarse correctamente', () => {
         const { getByText } = render( <TodoAdd  handleAddTodo={ handleAddTodo }/> )
         expect( getByText(/agregar todo/i).textContent ).toBe('Agregar TODO')

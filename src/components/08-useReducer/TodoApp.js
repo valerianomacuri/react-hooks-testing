@@ -6,9 +6,7 @@ import { TodoAdd } from './TodoAdd';
 import './styles.css';
 
 const init = () => {
-
     return JSON.parse(localStorage.getItem('todos')) || [];
-
 }
 
 export const TodoApp = () => {
@@ -17,6 +15,7 @@ export const TodoApp = () => {
     
     useEffect( ()=> {
         localStorage.setItem('todos', JSON.stringify( todos ) );
+        console.log('me ejecute')
     }, [todos]);
 
 
@@ -51,7 +50,7 @@ export const TodoApp = () => {
 
     return (
         <div>
-            <h1>TodoApp ( { todos.length } ) </h1>
+            <h1>TodoApp ( { todos.length } )</h1>
             <hr />
 
             <div className="row">
